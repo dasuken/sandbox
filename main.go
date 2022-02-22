@@ -1,7 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/dasuken/sandbox/pkg"
+)
 
 func main() {
-	fmt.Println("hello world")
+	s := pkg.New()
+	fmt.Println("hello world" + s)
 }
